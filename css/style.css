@@ -7,7 +7,8 @@
 body {
   background-color: #fff;
   color: var(--primary-text-color);
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
+  font-family: "Roboto", sans-serif;
 }
 
 .list {
@@ -17,7 +18,8 @@ body {
 /* Хедер. Логотип */
 .logo {
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway"; */
   font-weight: bold;
   font-size: 26px;
   line-height: 119%;
