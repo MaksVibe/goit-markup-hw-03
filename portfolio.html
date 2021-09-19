@@ -1,146 +1,122 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- <meta http-equiv="Content-Type" content="charset=utf-8" /> -->
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Главная</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!--Верхняя линия (согласно дизайна), Хедер (шапка) в соответствии с лекцией-->
-    <header>
-      <nav>
-        <a href="/" class="logo">WebStudio</a>
-        <ul>
+    <!-- Хедер (шапка) -->
+    <header class="top-line">
+      <a href="./index.html" class="logo">
+        <span style="color: #2196f3;">Web</span></span><span style="color: #212121;">Studio</span>
+      </a>
+      <nav class="nav-main">
+        <ul class="list">
           <li>
-            <a href="./index.html">Студия</a>
+            <a href="./index.html" class="link studio">Студия</a>
           </li>
           <li>
-            <a href="./portfolio.html">Портфолио</a>
+            <a href="./portfolio.html" class="link port">Портфолио</a>
           </li>
           <li>
-            <a>Контакты</a>
+            <a href="./index.html" class="link contact">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="list">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a href="mailto:info@devstudio.com" class="link mail-link">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <a href="tel:+380961111111" class="link phone-link">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
     <main>
-      <h1 style="display: none;">Портфолио</h1>
-      <article>
-        <!-- Фильтры -->
-        <ul>
+      <section>
+        <h1 style="display: none;">Портфолио студии Веб-студио</h1>
+        <!-- Фильтры Портфолио -->
+        <ul class="list filters">
           <li>
-            <button type="button">Все</button>
+            <button type="button" class="but">Все</button>
           </li>
           <li>
-            <button type="button">Веб-сайты</button>
+            <button type="button" class="but">Веб-сайты</button>
           </li>
           <li>
-            <button type="button">Приложения</button>
+            <button type="button" class="but">Приложения</button>
           </li>
           <li>
-            <button type="button">Дизайн</button>
+            <button type="button" class="but">Дизайн</button>
           </li>
           <li>
-            <button type="button">Маркетинг</button>
+            <button type="button" class="but">Маркетинг</button>
           </li>
         </ul>
-        <!-- Карточки портфолио -->
-        <ul>
-          <li>
-            <img
-              src="./images/portfolio/technokrjak.jpg"
-              alt="Изображение веб-сайта Технокряк в ноутбуке"
-            />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+        <!-- Список кейсов портфолио -->
+        <ul class="list">
+         <li class="card">
+            <img src="./images/portfolio/technokrjak.jpg" width="370px" alt="Веб-сайт на экране ноутбука">
+            <h3>Технокряк</h3>
+            <p>Веб-сайты</p>
           </li>
-          <li>
-            <img
-              src="./images/portfolio/neworlean-goldenstar.jpg"
-              alt="Постер борьба баскетболистов за мячь Нью Орлеан против Голден Старз"
-            />
-            <h2>Постер New Orlean vs Golden Star</h2>
+          <li class="card">
+            <img src="./images/portfolio/neworlean-goldenstar.jpg" width="370px" alt="Постер с баскетболистами">
+            <h3 lang="en">Постер New Orlean vs Golden Star</h3>
             <p>Дизайн</p>
           </li>
-          <li>
-            <img
-              src="./images/portfolio/restaurant-seafood.jpg"
-              alt=" Логотип ресторана Сифуд с изображением огромной рыбы"
-            />
-            <h2>Ресторан Seafood</h2>
+          <li class="card">
+            <img src="./images/portfolio/restaurant-seafood.jpg" width="370px" alt="Логотип ресторана Сифуд">
+            <h3>Ресторан Seafood</h3>
             <p>Приложение</p>
           </li>
-          <li>
-            <img
-              src="./images/portfolio/prime-project.jpg"
-              alt="Изображение больших наушников с дугой"
-            />
-            <h2>Проект Prime</h2>
+          <li class="card">
+            <img src="./images/portfolio/prime-project.jpg" width="370px" alt="Большие наушники черного цвета">
+            <h3>Проект Prime</h3>
             <p>Маркетинг</p>
           </li>
-          <li>
-            <img
-              src="./images/portfolio/boxes-project.jpg"
-              alt="Две коробки по диагонали слева белая по-больше, справа коричневая по-меньше"
-            />
-            <h2>Проект Boxes</h2>
+          <li class="card">
+            <img src="./images/portfolio/boxes-project.jpg" width="370px" alt="Две коробки">
+            <h3>Проект Boxes</h3>
             <p>Приложение</p>
           </li>
-          <li>
-            <img
-              src="./images/portfolio/inspiration.jpg"
-              alt="Изображение сайта Инспирейшн хез ноу бордерс на мониторе аймак"
-            />
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+          <li class="card">
+            <img src="./images/portfolio/inspiration.jpg" width="370px" alt="Веб-сайт на компьютере">
+            <h3 lang="en">Inspiration has no Borders</h3>
+            <p>Веб-сайты</p>
           </li>
-          <li>
-            <img
-              src="./images/portfolio/mag-limited.jpg"
-              alt="Развернутый журнал Лимитед Едишн"
-            />
-            <h2>Издание Limited Edition</h2>
-            <p>Дизайн</p>
+          <li class="card">
+            <img src="./images/portfolio/mag-limited.jpg" width="370px" alt="Журнал Лимитед Эдишн">
+            <h3>Издание Limited Edition</h3>
+            <p>Дизайн</p></li>
           </li>
-          <li>
-            <img
-              src="./images/portfolio/lab-project.jpg"
-              alt="Белая бирка с надписью Лаб ель Тег"
-            />
-            <h2>Проект LAB</h2>
-            <p>Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/growing-business.jpg"
-              alt="Руки печатают на ноутбуке с изображением приложения для бизнеса, справа очки на документах слева блокнот"
-            />
-            <h2>Growing Business</h2>
+          <li class="card">
+            <img src="./images/portfolio/lab-project.jpg" width="370px" alt="Бирка с надписью Лаб Ель Тэг">
+            <h3>Проект LAB</h3>
+            <p>Маркетинг</p></li>
+          <li class="card">
+            <img src="./images/portfolio/growing-business.jpg" width="370px" alt="Ноутбук с приложением Гроуин Бизнес">
+            <h3 lang="en">Growing Business</h3>
             <p>Приложение</p>
           </li>
         </ul>
-      </article>
+      </section>
     </main>
     <!--Подвал-->
-    <footer>
-      <a href="/">WebStudio</a>
-      <ul>
+    <footer class="bot-line">
+      <a href="./index.html" class="logo">
+        <span style="color: #2196f3;">Web</span></span><span style="color: #212121;">Studio</span>
+      </a>
+      <ul class="list">
         <li>
-          <address>г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
         </li>
         <li>
-          <a href="mailto:info@example.com">info@example.com</a>
+          <a href="mailto:info@example.com" class="link mail-link">info@example.com</a>
         </li>
         <li>
-          <a href="tel:+380991111111">+38 099 111 11 11</a>
+          <a href="tel:+380991111111" class="link phone-link">+38 099 111 11 11</a>
         </li>
       </ul>
     </footer>
