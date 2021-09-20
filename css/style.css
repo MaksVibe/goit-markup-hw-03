@@ -8,7 +8,6 @@
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
-  /* font-family: "Roboto"; */
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -175,10 +174,6 @@ body {
   color: var(--accent-color);
 }
 
-.portfolio .top-line {
-  border-bottom: 1px solid #ececec;
-}
-
 /* Фильтры страницы Портфолио */
 .filters .but {
   background: #f5f4fa;
@@ -189,7 +184,6 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 1.625;
-  /* identical to box height, 26px or 162% */
 
   cursor: pointer;
   text-align: center;
@@ -209,9 +203,21 @@ body {
 }
 
 /* Карточки Портфолио */
-.card {
+.cards {
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+.cards .title-third {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.cards .text {
+  font-size: 16px;
+  line-height: 1.875;
 }
