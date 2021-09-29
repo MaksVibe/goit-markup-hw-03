@@ -52,6 +52,7 @@ p {
 
 /* Общие отступы для блоков */
 .section {
+  justify-content: center;
   padding-bottom: 94px;
 }
 
