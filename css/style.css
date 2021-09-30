@@ -344,7 +344,7 @@ ul {
 .cards {
   flex-wrap: wrap;
 }
-.filter img {
+.image {
   display: block;
 }
 
